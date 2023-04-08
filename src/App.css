@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+/* Jumbotron */
+
+.intro {
+  width: 50%;
+}
+
+.jumbotron {
+  height: 30rem;
+}
+
+.main-picture {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 5px solid goldenrod;
+  object-fit: cover;
+  object-position: 0 0;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease;
+}
+
+.intro {
+  position: absolute;
+  top: 32%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.d-flex:hover .main-picture {
+  transform: translateX(-150%);
+}
+
+.d-flex:hover .intro {
+  opacity: 1;
+  transform: translateX(30%);
+}

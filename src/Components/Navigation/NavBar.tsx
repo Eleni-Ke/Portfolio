@@ -3,7 +3,7 @@ import { BsFillPeopleFill } from "react-icons/bs";
 
 const NavBar = () => {
   return (
-    <Navbar>
+    <Navbar bg="dark" variant="dark">
       <Container>
         <Navbar.Brand>
           <div>Logo</div>
