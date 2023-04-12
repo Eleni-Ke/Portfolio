@@ -41,6 +41,7 @@
 
 .intro {
   width: 50%;
+  background-color: rgba(0, 0, 0, 0.088);
 }
 
 .jumbotron {
@@ -66,11 +67,16 @@
 .intro {
   position: absolute;
   top: 32%;
-  left: 50%;
+  left: 62%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.8s cubic-bezier(0.67, 0.58, 0.5, 0.91),
     transform 0.5s ease;
+  /* For easing in */
+  transition-timing-function: cubic-bezier(0.67, 0.58, 0.5, 0.91);
+
+  /* For easing out */
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .d-flex:hover .main-picture {
@@ -79,5 +85,5 @@
 
 .d-flex:hover .intro {
   opacity: 1;
-  transform: translateX(-10%);
+  transform: translateX(-32%);
 }
