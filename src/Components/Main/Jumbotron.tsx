@@ -1,6 +1,6 @@
 const Jumbotron = () => {
   return (
-    <div className="jumbotron jumbotron-fluid">
+    <div className="jumbotron jumbotron-fluid mb-0">
       <div className="container">
         <div className="d-flex justify-content-around align-items-center">
           <img
@@ -8,14 +8,17 @@ const Jumbotron = () => {
             alt="Eleni smiling"
             className="main-picture"
           />
-          <p className="intro">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
-            deleniti alias cupiditate dicta harum ea saepe doloribus aliquid
-            excepturi adipisci, quo odit architecto recusandae quis? Cum dolorem
-            obcaecati aut distinctio maiores ullam illo, maxime debitis quam
-            magnam harum sunt explicabo numquam natus sed similique corrupti at
-            consequuntur consectetur velit voluptatem.
-          </p>
+          <div className="intro p-4">
+            <h4>Full-stack developer</h4>
+            <p>
+              Welcome to my Portfolio! <br /> My name is Eleni Kellermann and
+              I'm a full-stack developer. On this page you will find all kinds
+              of informations about me and my experiences. <br /> <br />
+              While your here, why don't you take a look at my projects? I'm
+              constantly trying to optimize them, so feel free to let me know
+              about possible improvements!
+            </p>
+          </div>
         </div>
       </div>
     </div>

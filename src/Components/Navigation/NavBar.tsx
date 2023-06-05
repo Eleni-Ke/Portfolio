@@ -5,7 +5,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar variant="dark" expand="lg">
       <Container>
         <Navbar.Brand>
           <div>Logo</div>
@@ -31,7 +31,7 @@ const NavBar = () => {
                 <span className="nav-text">Work experience</span>
               </div>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link href="#skills">
               <div className="icons d-flex flex-column align-items-center mx-2">
                 <BsTools size="1em" />
                 <span className="nav-text">Skills</span>
