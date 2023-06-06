@@ -9,7 +9,7 @@ const Education = () => {
         <div className="individual-education">
           <h4>Full-stack developer | Epicode</h4>
           <p>
-            2022 - 2023 <br /> <br />
+            <span>2022 - 2023</span> <br /> <br />
             Certified 6-months bootcamp to become a full-stack developer <br />{" "}
             <br />
             html/css, TypeScript/JavaScript, NodeJS, React/REDUX, Express,
@@ -20,7 +20,7 @@ const Education = () => {
         <div className="individual-education">
           <h4>Various Courses | Codecadamy</h4>
           <p>
-            2021 - present <br /> <br />
+            <span>2021 - present</span> <br /> <br />
             As I am constantly seeking to improve myself and my coding skills, I
             have continuously been doing certified online courses on Codecadamy.{" "}
             <br /> <br />
@@ -34,8 +34,10 @@ const Education = () => {
             F&U Heidelberg
           </h4>
           <p>
-            2014 - 2017 <br /> <br />
-            This is an education
+            <span>2014 - 2017</span> <br /> <br />
+            This training involved one year of intership, then two years of
+            theory in a classroom with two shorter interships and one practical
+            year.
           </p>
         </div>
       </div>

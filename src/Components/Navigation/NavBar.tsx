@@ -19,13 +19,13 @@ const NavBar = () => {
                 <span className="nav-text">About me</span>
               </div>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link href="#education">
               <div className="icons d-flex flex-column align-items-center mx-2">
                 <BsBook size="1em" />
                 <span className="nav-text">Education</span>
               </div>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link href="#experience">
               <div className="icons d-flex flex-column align-items-center mx-2">
                 <MdWorkOutline size="1em" />
                 <span className="nav-text">Work experience</span>
