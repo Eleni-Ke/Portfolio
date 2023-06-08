@@ -62,12 +62,12 @@ const AboutMe = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block w-100 mb-0"
               src="/images/personality.jpeg"
               alt="Third slide"
             />
 
-            <h3>Personality</h3>
+            <h3 className="">Personality</h3>
             <p>
               I am very open minded and like to hear other peoples opinion.
               Working in a team is one of my bigest motivations. I like to know

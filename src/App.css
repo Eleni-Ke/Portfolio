@@ -305,7 +305,7 @@
 
 /* PROJECTS */
 .projects-container {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding-bottom: 2rem;
   border-top: 2px solid goldenrod;
   border-bottom: 2px solid goldenrod;
@@ -365,4 +365,33 @@
 
 .flip-card-back a {
   color: white;
+}
+
+/* CONTACT */
+.contact-container {
+  margin-bottom: 2rem;
+}
+
+.contact-container h3 {
+  padding: 1rem 1rem 1rem;
+}
+
+.contact-container a {
+  width: 20%;
+  color: rgba(0, 0, 0, 0.415);
+  transition: transform 0.2s;
+}
+
+.contact-container .linkedIn-link:hover {
+  color: #0c66c2;
+  transform: scale(1.3);
+}
+
+.contact-container .github-link:hover {
+  color: black;
+  transform: scale(1.3);
+}
+
+.contact-container svg {
+  font-size: 2rem;
 }

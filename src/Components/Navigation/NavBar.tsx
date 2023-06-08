@@ -37,13 +37,13 @@ const NavBar = () => {
                 <span className="nav-text">Skills</span>
               </div>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link href="#projects">
               <div className="icons d-flex flex-column align-items-center mx-2">
                 <HiOutlineLightBulb size="1em" />
                 <span className="nav-text">Project</span>
               </div>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link href="#contact">
               <div className="icons d-flex flex-column align-items-center mx-2">
                 <MdOutlineMail size="1em" />
                 <span className="nav-text">Contact</span>
