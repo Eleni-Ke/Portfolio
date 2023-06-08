@@ -7,7 +7,7 @@ const Education = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsActive(scrollPosition > 75);
+      setIsActive(scrollPosition > 600);
     };
 
     window.addEventListener("scroll", handleScroll);

@@ -7,7 +7,7 @@ const Experience = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsActive(scrollPosition > 900);
+      setIsActive(scrollPosition > 1500);
     };
 
     window.addEventListener("scroll", handleScroll);
