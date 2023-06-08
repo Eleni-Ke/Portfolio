@@ -5,19 +5,35 @@ const Projects = () => {
     <Container fluid className="projects-container" id="projects">
       <h3>Projects</h3>
 
-      <div className="d-flex align-items-center">
-      <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>John Doe</h1>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
-    </div>
-  </div>
-</div>
+      <div className="d-flex justify-content-around">
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img src="/images/Scriptorium-App.png" alt="Avatar" />
+            </div>
+            <div className="flip-card-back">
+              <h1>Scriptorium</h1>
+              <p>
+                Solo project: An Application to help you to creating your next
+                novel.
+              </p>
+              <p>
+                {" "}
+                <a href="https://scriptorium.vercel.app/">
+                  -{">"} Click here to visit!
+                </a>{" "}
+                <br />
+                <a href="https://github.com/Eleni-Ke/capstone_project_FE">
+                  -{">"} Check out the Front-end code here!
+                </a>{" "}
+                <br />
+                <a href="https://github.com/Eleni-Ke/capstone_project_BE">
+                  -{">"} Check out the Back-end code here!
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </Container>
   );
