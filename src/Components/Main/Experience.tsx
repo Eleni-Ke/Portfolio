@@ -1,12 +1,27 @@
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 
 const Experience = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsActive(scrollPosition > 900);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <Container fluid className="experience-container" id="experience">
       <h3>Work experience</h3>
 
       <div className="d-flex flex-column align-items-center">
-        <div className="individual-experience">
+        <div className={`individual-experience ${isActive ? "active" : ""}`}>
           <h4>Educator/Vice principal | Kita Wasserflöhe Karlsruhe DE</h4>
           <p>
             <span>2022</span> <br /> <br />
@@ -17,7 +32,7 @@ const Experience = () => {
             in the absence of the school's director.
           </p>
         </div>
-        <div className="individual-experience">
+        <div className={`individual-experience ${isActive ? "active" : ""}`}>
           <h4>Self-employed caregiver and language tutor</h4>
           <p>
             <span>2021</span> <br /> <br />I helped different families taking
@@ -26,7 +41,7 @@ const Experience = () => {
             in french.
           </p>
         </div>
-        <div className="individual-experience">
+        <div className={`individual-experience ${isActive ? "active" : ""}`}>
           <h4>Live-in care professional | New York City/ Quechee VT USA</h4>
           <p>
             <span>2019 - 2021</span> <br /> <br />I was working as a live-in
@@ -34,7 +49,7 @@ const Experience = () => {
             Vermont, when I moved with the family when Covid started.
           </p>
         </div>
-        <div className="individual-experience">
+        <div className={`individual-experience ${isActive ? "active" : ""}`}>
           <h4>Educator in multilingual Kindergarten | Cologne DE</h4>
           <p>
             <span>2018 - 2019</span> <br /> <br />I was working as an educator

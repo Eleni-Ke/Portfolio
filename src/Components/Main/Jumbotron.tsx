@@ -14,7 +14,7 @@ const Jumbotron = () => {
               Welcome to my Portfolio! <br /> My name is Eleni Kellermann and
               I'm a full-stack developer. On this page you will find all kinds
               of informations about me and my experiences. <br /> <br />
-              While your here, why don't you take a look at my projects? I'm
+              While you're here, why don't you take a look at my projects? I'm
               constantly trying to optimize them, so feel free to let me know
               about possible improvements!
             </p>

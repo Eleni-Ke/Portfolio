@@ -1,12 +1,27 @@
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 
 const Education = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsActive(scrollPosition > 75);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <Container fluid className="education-container" id="education">
       <h3>Education</h3>
 
       <div className="d-flex flex-column align-items-center">
-        <div className="individual-education">
+        <div className={`individual-education ${isActive ? "active" : ""}`}>
           <h4>Full-stack developer | Epicode</h4>
           <p>
             <span>2022 - 2023</span> <br /> <br />
@@ -17,7 +32,7 @@ const Education = () => {
             Postman API & Documention
           </p>
         </div>
-        <div className="individual-education">
+        <div className={`individual-education ${isActive ? "active" : ""}`}>
           <h4>Various Courses | Codecadamy</h4>
           <p>
             <span>2021 - present</span> <br /> <br />
@@ -28,7 +43,7 @@ const Education = () => {
             React, Linux...
           </p>
         </div>
-        <div className="individual-education">
+        <div className={`individual-education ${isActive ? "active" : ""}`}>
           <h4>
             Ausbildung as Educator specialised in teenagers and social work |
             F&U Heidelberg

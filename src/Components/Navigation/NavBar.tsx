@@ -13,7 +13,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="me-auto">
-            <Nav.Link>
+            <Nav.Link href="#aboutMe">
               <div className="icons d-flex flex-column align-items-center mx-2">
                 <MdOutlineFace3 size="1em" />
                 <span className="nav-text">About me</span>

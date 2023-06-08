@@ -102,6 +102,44 @@
   }
 }
 
+/* ABOUT ME */
+.aboutMe-container h3 {
+  padding: 1rem;
+}
+
+.carousel {
+  height: 30rem;
+  width: 80%;
+  /* border: 1px solid black; */
+  padding: 20px 25px;
+  background-color: #64b1e1;
+}
+
+.carousel-item p {
+  margin-inline: 3rem;
+}
+
+.carousel-item img {
+  height: 10rem;
+  overflow: hidden;
+  object-fit: contain;
+  padding-inline: 5px;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 905px) {
+  .carousel {
+    height: 33rem;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .carousel {
+    height: fit-content;
+    padding-bottom: 2rem;
+  }
+}
+
 /* EDUCATION */
 .education-container {
   /* background-color: #2b99d85e; */
@@ -122,20 +160,19 @@
   transition: all ease 0.5s;
 }
 
-.education-container:hover .individual-education {
-  margin-right: 0;
-}
-
 .individual-education:nth-child(1) {
   margin-right: 200rem;
+  transition-delay: 50ms;
 }
 
 .individual-education:nth-child(2) {
   margin-right: -200rem;
+  transition-delay: 150ms;
 }
 
 .individual-education:nth-child(3) {
   margin-right: 200rem;
+  transition-delay: 250ms;
 }
 
 .individual-education h4 {
@@ -152,6 +189,10 @@
 
 .individual-education span {
   font-size: 1.5rem;
+}
+
+.education-container .active {
+  margin-right: 0;
 }
 
 /* WORK EXPERIENCE */
@@ -175,24 +216,24 @@
   transition: all ease 0.5s;
 }
 
-.experience-container:hover .individual-experience {
-  margin-right: 0;
-}
-
 .individual-experience:nth-child(1) {
   margin-right: 200rem;
+  transition-delay: 50ms;
 }
 
 .individual-experience:nth-child(2) {
   margin-right: -200rem;
+  transition-delay: 150ms;
 }
 
 .individual-experience:nth-child(3) {
   margin-right: 200rem;
+  transition-delay: 250ms;
 }
 
 .individual-experience:nth-child(4) {
   margin-right: -200rem;
+  transition-delay: 350ms;
 }
 
 .individual-experience h4 {
@@ -204,6 +245,10 @@
 
 .individual-experience span {
   font-size: 1.5rem;
+}
+
+.experience-container .active {
+  margin-right: 0 !important;
 }
 
 /* SKILLS */
