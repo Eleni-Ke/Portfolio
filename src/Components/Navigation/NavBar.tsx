@@ -8,7 +8,7 @@ const NavBar = () => {
     <Navbar variant="dark" expand="lg">
       <Container>
         <Navbar.Brand>
-          <div>Logo</div>
+          <div className="logo">EK</div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
