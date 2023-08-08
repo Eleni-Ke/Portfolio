@@ -24,14 +24,14 @@ const Contact = () => {
         >
           <BsGithub />
         </a>
-        <a href="link">
+        <p>
           <AiOutlineMail /> <br />
           eleni.kellermann@hotmail.de
-        </a>
-        <a href="link">
+        </p>
+        <p>
           <BsTelephone /> <br />
           +49 176 30742093
-        </a>
+        </p>
       </div>
     </Container>
   );
