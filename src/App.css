@@ -58,11 +58,6 @@
 
 /* Jumbotron */
 
-.intro {
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.088);
-}
-
 .jumbotron {
   height: 30rem;
   position: relative;
@@ -85,7 +80,11 @@
 }
 
 .intro {
+  overflow: auto;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.088);
   position: absolute;
+  max-height: 20rem;
   background-color: #2b99d8c4;
   border-radius: 15px;
   top: 25%;
@@ -106,6 +105,7 @@
 
 .jumbotron:hover .intro {
   opacity: 1;
+  z-index: 3;
 }
 
 @media screen and (min-width: 890px) {
@@ -303,7 +303,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   top: -7rem;
   left: 0;
   width: 100%;
@@ -320,6 +320,9 @@
 @media screen and (min-width: 700px) {
   .individual-skill {
     height: 7rem;
+  }
+  .individual-skill .back {
+    font-size: 1.5rem;
   }
 }
 
