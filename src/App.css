@@ -121,7 +121,12 @@
 }
 
 /* ABOUT ME */
-.aboutMe-container h3 {
+.aboutMeContainer {
+  border-bottom: 2px solid goldenrod;
+  padding-bottom: 3rem;
+}
+
+.aboutMeContainer h3 {
   padding: 1rem;
 }
 
@@ -160,10 +165,8 @@
 
 /* EDUCATION */
 .education-container {
-  /* background-color: #2b99d85e; */
   padding: 1rem;
   border-bottom: 2px solid goldenrod;
-  /* margin-bottom: 2rem; */
 }
 
 .education-container h3 {
@@ -215,7 +218,6 @@
 
 /* WORK EXPERIENCE */
 .experience-container {
-  /* background-color: #2b99d85e; */
   padding: 1rem;
   border-bottom: 2px solid goldenrod;
   margin-bottom: 2rem;

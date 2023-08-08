@@ -2,7 +2,7 @@ import { Carousel, Container } from "react-bootstrap";
 
 const AboutMe = () => {
   return (
-    <Container fluid className="aboutMe-container" id="aboutMe">
+    <Container fluid className="aboutMeContainer" id="aboutMe">
       <h3>About me</h3>
       <div className="d-flex flex-column align-items-center">
         <Carousel interval={null}>
