@@ -7,11 +7,11 @@ const Contact = () => {
     <Container fluid className="contact-container" id="contact">
       <h3>Contact me here</h3>
 
-      <div className="d-flex justify-content-around">
+      <div className="d-flex justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-4">
         <a
           href="https://www.linkedin.com/in/eleni-kellermann-bb965625a/"
           target="_blank"
-          className="linkedIn-link"
+          className="linkedIn-link mb-5 col"
           rel="noopener noreferrer"
         >
           <BsLinkedin />
@@ -19,16 +19,18 @@ const Contact = () => {
         <a
           href="https://github.com/Eleni-Ke"
           target="_blank"
-          className="github-link"
+          className="github-link mb-5 col"
           rel="noopener noreferrer"
         >
           <BsGithub />
         </a>
-        <p>
+        <p className="mb-5 col">
           <AiOutlineMail /> <br />
-          eleni.kellermann@hotmail.de
+          eleni.kellermann
+          <br />
+          @hotmail.de
         </p>
-        <p>
+        <p className="mb-5 col">
           <BsTelephone /> <br />
           +49 176 30742093
         </p>
